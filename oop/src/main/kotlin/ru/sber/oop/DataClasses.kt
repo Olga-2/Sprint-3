@@ -2,6 +2,11 @@ package ru.sber.oop
 
 data class User(val name: String, val age: Long) {
     lateinit var city: String
+
+    override fun equals(other: Any?): Boolean {
+
+        return super.equals(other) && (other is User && this.city.equals(other.city))
+    }
 }
 
 fun main() {
@@ -14,11 +19,6 @@ fun main() {
     //TODO: user3 = ...
     val user3 = user1.copy().apply { city = "Tomsk"}
 
-    println(user1.equals(user3)) //ответ true
-
-    //Измененый класс User
-//  data class User(val name: String, val age: Long, val city: String){
-//  }
-//
+    println(user1.equals(user3))
 
 }
