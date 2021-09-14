@@ -18,6 +18,6 @@ class TownSquare: Room("TownSquare", 1000) {
 
     override val dangerLevel = super.dangerLevel - 3
 
-    override fun load() = print("TownSquare is here...")
+    final override fun load() = print("TownSquare is here...")
 
 }
