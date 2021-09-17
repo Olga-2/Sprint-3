@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import ru.sber.qa.CertificateRequest
 import ru.sber.qa.CertificateType
+import ru.sber.qa.Scanner
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 

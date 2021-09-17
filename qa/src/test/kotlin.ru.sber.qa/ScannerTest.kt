@@ -8,6 +8,7 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import ru.sber.qa.CertificateRequest
 import ru.sber.qa.ScanTimeoutException
+import ru.sber.qa.Scanner
 import kotlin.random.Random
 import kotlin.test.assertEquals
 
