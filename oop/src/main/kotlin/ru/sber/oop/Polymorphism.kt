@@ -22,13 +22,15 @@ class Player(override val powerType: String, override var healthPoints: Int,
         return damage
     }
 }
-
+/
 abstract class Monster(override val powerType: String, override var healthPoints: Int,
              open val name : String, open val description : String) : Fightable {
 
+    override val damageRoll = super.damageRoll
+
     override fun attack(opponent: Fightable): Int {
-        opponent.healthPoints = opponent.healthPoints - this.damageRoll
-        return this.damageRoll
+        opponent.healthPoints = opponent.healthPoints - damageRoll
+        return damageRoll
     }
     fun getSalutation(){
         println("Hello, guys!")
